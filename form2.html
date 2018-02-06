@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+</head>
+<body>
+
+
+<form action="">
+User name:<br>
+<input type="text" name="userid">
+<br>
+User password:<br>
+<input type="password" name="psw">
+</form>
+
+<p>密码字段中的字符被掩码（显示为星号或圆点）。</p>
+
+<hr />
+
+
+<form action="index.html">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+<p>如果您点击提交，表单数据会被发送到名为 index.html 的页面。</p>
+
+<hr />
+
+<form action="index.html">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit">
+</form> 
+
+<hr />
+
+
+<form action="index.html">
+<input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+<br><br>
+<input type="submit">
+</form> 
+
+<hr />
+
+
+<form action="index.html">
+<input type="checkbox" name="vehicle" value="Bike">I have a bike
+<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car 
+<br><br>
+<input type="submit">
+</form> 
+
+<hr />
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+<hr />
+
+<p>
+根据浏览器支持：<br>
+数值约束会应用到输入字段中。
+</p>
+
+<form action="index.html">
+  数量（1 到 5 之间）：
+  <input type="number" name="quantity" min="1" max="5">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>IE9 及早期版本不支持 type="number"。</p>
+
+<hr />
+
+<p>
+Depending on browser support:<br>
+Fixed steps will apply in the input field.
+</p>
+
+<form action="index.html">
+  Quantity:
+  <input type="number" name="points"
+   min="0" max="100" step="10" value="30">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b>type="number" is not supported in IE9 and earlier.
+</p>
+
+<hr />
+
+<p>
+根据浏览器支持：<br>
+当您填写输入字段时会弹出日期选择器。
+</p>
+
+<form action="index.html">
+  生日：
+  <input type="date" name="bday">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>Firefox 或者
+Internet Explorer 11 以及更早版本不支持 type="date"。</p>
+
+<hr />
+
+<form action="index.html">
+请输入 1980-01-01 之前的日期：<br>
+<input type="date" name="bday" max="1979-12-31"><br><br>
+请输入 2000-01-01 之后的日期：<br>
+<input type="date" name="bday" min="2000-01-02"><br><br>
+<input type="submit"> 
+</form>
+
+<p><b>注释：</b>
+Internet Explorer 不支持 type="date"。</p>
+
+<hr />
+
+<p>
+Depending on browser support:<br>
+A color picker can pop-up when you enter the input field.
+</p>
+
+<form action="index.html">
+  Select your favorite color:
+  <input type="color" name="favcolor" value="#ff0000">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer.</p>
+
+<hr />
+
+<p>
+根据浏览器支持：<br>
+输入类型 "range" 可显示为滑动控件。
+</p>
+
+<form action="index.html" method="get">
+  Points:
+  <input type="range" name="points" min="0" max="10">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>IE9 及早期版本不支持 type="range"。</p>
+
+<hr />
+
+<p>
+根据浏览器支持：<br>
+当您填写输入字段时会弹出日期选择器。
+</p>
+
+<form action="index.html">
+  生日（月和年）：
+  <input type="month" name="bdaymonth">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>Firefox 或者
+Internet Explorer 11 以及更早版本不支持 type="month"。</p>
+
+<hr />
+
+
+<p>
+根据浏览器支持：<br>
+当您填写输入字段时会弹出日期选择器。
+</p>
+
+<form action="index.html">
+  Select a week:
+  <input type="week" name="year_week">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>
+Internet Explorer 不支持 type="week"。</p>
+
+<hr />
+
+
+<p>
+根据浏览器支持：<br>
+当您填写输入字段时会弹出日期选择器。
+</p>
+
+<form action="index.html">
+  请选取一个时间：
+  <input type="time" name="usr_time">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>Firefox 或者
+Internet Explorer 11 以及更早版本不支持 type="time"。</p>
+
+<hr />
+
+
+<p>
+根据浏览器支持：<br>
+当您填写输入字段时会弹出日期选择器。
+</p>
+
+<form action="index.html">
+  生日（日期和时间）：
+  <input type="datetime" name="bdaytime">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>Chrome、Firefox 或 Internet Explorer 不支持 type="datetime"。</p>
+
+<hr />
+
+
+<p>
+根据浏览器支持：<br>
+当您填写输入字段时会弹出日期选择器。
+</p>
+
+<form action="index.html">
+  生日（日期和时间）：
+  <input type="datetime-local" name="bdaytime">
+  <input type="submit" value="Send">
+</form>
+
+<p><b>注释：</b>Firefox 或者
+Internet Explorer 不支持 type="datetime-local"。</p>
+
+<hr />
+
+<form action="index.html">
+  E-mail:
+  <input type="email" name="email">
+  <input type="submit">
+</form>
+
+<p>
+<b>注释：</b>IE9 及更早版本不支持 type="email"。</p>
+
+<hr />
+
+<form action="index.html">
+  搜索谷歌：
+  <input type="search" name="googlesearch">
+  <input type="submit">
+</form>
+
+<hr />
+
+<form action="index.html">
+  Telephone:
+  <input type="tel" name="usrtel">
+  <input type="submit">
+</form>
+
+<p><b>注释：</b>Safari 8 及更新版本支持 type="tel"。</p>
+
+
+<hr />
+
+
+<form action="index.html">
+  请添加您的首页：
+  <input type="url" name="homepage">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b>IE9 及其更早版本不支持 type="url"。</p>
+
+</body>
+</html>

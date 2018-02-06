@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<form action="index.html">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<br /><br />
+<input type="submit">
+</form>
+
+<hr />
+
+<p>您可以通过 selected 属性预选择某些选项。</p>
+
+<form action="index.html">
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat" selected>Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<br><br>
+<input type="submit">
+</form>
+
+<hr />
+
+<form action="form1_submit" method="get" accept-charset="utf-8">
+	<textarea name="message" rows="10" cols="30">
+	The cat was playing in the garden.
+	</textarea>
+</form>
+
+<hr />
+
+<button type="button" onclick="alert('Hello World!')">点击我！</button>
+
+<hr />
+
+<form action="index.html">
+
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<input type="submit">
+</form>
+
+<p><b>注释：</b>Safari 或 IE9（以及更早的版本）不支持 datalist 标签。</p>
+
+
+</body>
+</html>
